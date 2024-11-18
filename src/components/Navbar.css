@@ -1,0 +1,54 @@
+/* Navbar.css */
+
+.first {
+  background-color: #333;          /* Dark background color */
+  padding: 1rem;                   /* Padding around the navbar */
+}
+
+.first ul {
+  list-style: none;                /* Remove bullet points from the list */
+  display: flex;                   /* Use flexbox for horizontal layout */
+  justify-content: center;         /* Center the items */
+  gap: 2rem;                       /* Space between the links */
+  margin: 0;                       /* Remove default margin */
+  padding: 0;                      /* Remove default padding */
+}
+
+.first li {
+  position: relative;              /* Position for hover effects */
+  color: white;
+  cursor: pointer;
+}
+
+.first li:hover {
+  color: #ff9800;                  /* Change color on hover */
+}
+
+.first li:not(:last-child)::after {
+  content: "";                     /* Use an empty content */
+  display: inline-block;           /* Make it inline */
+  width: 1px;                     /* Set the width of the line */
+  height: 20px;                   /* Set the height of the line */
+  background-color: #fff;          /* White line color */
+  margin-left: 1rem;               /* Space between items */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .first {
+    padding: 0.5rem;               /* Reduce padding on smaller screens */
+  }
+
+  .first ul {
+    flex-direction: column;        /* Stack links vertically */
+    align-items: center;           /* Center items */
+  }
+
+  .first li {
+    margin-bottom: 1rem;           /* Space between links */
+  }
+
+  .first li:not(:last-child)::after {
+    display: none;                 /* Hide separators on small screens */
+  }
+}

@@ -1,0 +1,56 @@
+ Home.css
+
+.home {
+  text-align: center;            /* Center-align text */
+  
+}
+
+.hero {
+  background-color: #f8f8f8;    /* Light background color */
+  padding: 2rem 0;              /* Padding on top and bottom */
+}
+
+.hero h1 {
+  font-size: 2.5rem;            /* Hero title size */
+  margin-bottom: 0.5rem;        /* Space below the title */
+}
+
+.hero p {
+  font-size: 1.2rem;            /* Hero description size */
+  margin-bottom: 1rem;          /* Space below the description */
+}
+
+.hero-btn {
+  background-color: #ff9800;    /* Button background color */
+  color: #fff;                  /* Button text color */
+  padding: 0.5rem 1rem;         /* Button padding */
+  text-decoration: none;         /* Remove underline */
+  border-radius: 5px;           /* Rounded corners */
+}
+
+.main-content {
+  padding: 2rem;                /* Padding around main content */
+}
+
+.product-grid {
+  display: grid;                /* Use grid layout for products */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+  gap: 1rem;                   /* Space between product cards */
+}
+
+.product-card {
+  border: 1px solid #ddd;       /* Light border around product cards */
+  border-radius: 5px;           /* Rounded corners */
+  padding: 1rem;                /* Padding inside product cards */
+  text-align: left;             /* Left-align text */
+}
+
+.product-card:hover {
+  transform: scale(1.05);       /* Slightly enlarge the card */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+}
+
+.product-card img {
+  max-width: 100%;              /* Responsive image */
+  height: auto;                 /* Maintain aspect ratio */
+} 
